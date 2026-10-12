@@ -9,15 +9,15 @@ Data: IMF PortWatch, 2019-01-01 to 2026-09.
   - Daily_Ports_Data for the Port of Singapore (port1201): daily port calls
     and estimated import/export trade -- used as a companion series.
 
-Model-selection note: three candidate targets were tried for the baseline
-(Singapore daily trade value, Singapore daily port calls, Malacca daily
-vessel count). Trade VALUE barely has any seasonal structure (in-sample
-R^2 = 0.03 on a trend + day-of-week + month baseline) because it is a
-capacity-weighted dollar estimate that swings a lot with vessel size mix,
-so treating its residuals as "anomalies" would mostly be picking up noise,
-not disruption. Vessel COUNTS are much better behaved (Malacca R^2 = 0.45,
-Singapore port calls R^2 = 0.26), so counts are used as the anomaly-detection
-target and trade value is kept only as a descriptive companion series.
+Model-selection note: three candidate targets (Malacca daily vessel count,
+Singapore daily port calls, Singapore daily trade value) are compared under the
+identical rolling out-of-sample method by model_selection.py, whose output is
+printed at the top of this script and summarised in the README. The comparison
+does NOT show a clean R^2 win for Malacca (in-sample window R^2 ranks port calls
+first); Malacca is kept as the target because it has the best genuinely
+out-of-sample fit and the most granular signal, and its anomalies are checked
+against documented disruptions. Trade value is kept only as a descriptive
+companion series.
 
 Approach:
 1. Fit trend + day-of-week + month-of-year seasonality on data strictly
@@ -35,6 +35,8 @@ Approach:
    indefinitely -- matching an "ongoing" event forever would make every
    later anomaly trivially "explained" and defeat the point of the check.
 """
+import runpy
+
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -42,11 +44,18 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
+from baseline import (MIN_TRAIN_DAYS, THRESH, OPEN_EVENT_WINDOW_DAYS,
+                      rolling_oos_fit, cluster_anomalies, matched_event)
+
 pd.set_option("display.width", 120)
 
 # ---------------------------------------------------------------------------
 # 1. Load & merge
 # ---------------------------------------------------------------------------
+print("=== Model selection (model_selection.py) ===")
+runpy.run_path("model_selection.py")
+print("\n=== Malacca pipeline ===")
+
 sg = pd.read_csv("data/singapore_port_daily.csv", parse_dates=["date"]).sort_values("date")
 mal = pd.read_csv("data/malacca_strait_daily.csv", parse_dates=["date"]).sort_values("date")
 events = pd.read_csv("data/disruption_events.csv", parse_dates=["fromdate", "todate"])
@@ -59,7 +68,6 @@ df = mal[["date", "n_total", "capacity"]].merge(
 print("Merged shape:", df.shape, "range:", df.date.min().date(), "to", df.date.max().date())
 
 CUTOFF = pd.Timestamp("2023-12-16")  # Red Sea Tensions start
-OPEN_EVENT_WINDOW_DAYS = 365          # bound for events with no recorded end date
 
 # ---------------------------------------------------------------------------
 # 2. Baseline: trend + day-of-week + month, numpy OLS, re-fit on a ROLLING
@@ -86,48 +94,8 @@ OPEN_EVENT_WINDOW_DAYS = 365          # bound for events with no recorded end da
 # ---------------------------------------------------------------------------
 t0 = df["date"].min()
 
-def build_design(dates, trend_origin):
-    n = len(dates)
-    trend = (dates - trend_origin).dt.days.values.astype(float)
-    dow_cat = pd.Categorical(dates.dt.dayofweek, categories=list(range(7)))
-    month_cat = pd.Categorical(dates.dt.month, categories=list(range(1, 13)))
-    dow = pd.get_dummies(dow_cat, prefix="dow", drop_first=True).astype(float)
-    month = pd.get_dummies(month_cat, prefix="mo", drop_first=True).astype(float)
-    X = np.column_stack([np.ones(n), trend, dow.values, month.values])
-    return X
-
-MIN_TRAIN_DAYS = 365
-WINDOW_DAYS = 730
-REFIT_FREQ_DAYS = 90
-
-def rolling_oos_fit(colname):
-    y_full = np.log(df[colname].values)
-    dates = df["date"]
-    fitted = np.full(len(df), np.nan)
-    z = np.full(len(df), np.nan)
-    r2s = []
-    first_refit_date = t0 + pd.Timedelta(days=MIN_TRAIN_DAYS)
-    refit_dates = pd.date_range(first_refit_date, dates.max(), freq=f"{REFIT_FREQ_DAYS}D")
-    for i, refit_date in enumerate(refit_dates):
-        train_start = max(t0, refit_date - pd.Timedelta(days=WINDOW_DAYS))
-        train_idx = (dates >= train_start) & (dates < refit_date)
-        score_end = refit_dates[i + 1] if i + 1 < len(refit_dates) else dates.max() + pd.Timedelta(days=1)
-        score_idx = (dates >= refit_date) & (dates < score_end)
-        if train_idx.sum() < 60 or score_idx.sum() == 0:
-            continue
-        X_train = build_design(dates[train_idx], train_start)
-        X_score = build_design(dates[score_idx], train_start)
-        beta, *_ = np.linalg.lstsq(X_train, y_full[train_idx.values], rcond=None)
-        train_fit = X_train @ beta
-        resid_std = (y_full[train_idx.values] - train_fit).std(ddof=1)
-        r2s.append(1 - np.var(y_full[train_idx.values] - train_fit) / np.var(y_full[train_idx.values]))
-        score_fit = X_score @ beta
-        fitted[score_idx.values] = score_fit
-        z[score_idx.values] = (y_full[score_idx.values] - score_fit) / resid_std
-    return fitted, z, np.mean(r2s)
-
-df["fitted_ntotal"], df["z_ntotal"], r2_ntotal = rolling_oos_fit("n_total")
-df["fitted_portcalls"], df["z_portcalls"], r2_portcalls = rolling_oos_fit("portcalls")
+df["fitted_ntotal"], df["z_ntotal"], r2_ntotal, _ = rolling_oos_fit(df, "n_total")
+df["fitted_portcalls"], df["z_portcalls"], r2_portcalls, _ = rolling_oos_fit(df, "portcalls")
 print(f"Rolling-window baseline mean training R^2 -- Malacca vessel count: {r2_ntotal:.3f} "
       f"| Singapore port calls: {r2_portcalls:.3f}")
 
@@ -135,48 +103,15 @@ print(f"Rolling-window baseline mean training R^2 -- Malacca vessel count: {r2_n
 # 3. Flag anomalies (all scoring above is already out-of-sample by construction:
 #    every day is scored against a model trained only on data before it)
 # ---------------------------------------------------------------------------
-THRESH = 2.5
 oos = df[df["date"] >= (t0 + pd.Timedelta(days=MIN_TRAIN_DAYS))].copy().sort_values("date").reset_index(drop=True)
-oos = oos.dropna(subset=["z_ntotal"])
-oos["flag"] = oos["z_ntotal"].abs() > THRESH
-
-cluster_ids, cid, prev_flag, prev_date = [], 0, False, None
-for _, row in oos.iterrows():
-    if row["flag"]:
-        if not prev_flag or (prev_date is not None and (row["date"] - prev_date).days > 3):
-            cid += 1
-        cluster_ids.append(cid)
-        prev_date = row["date"]
-    else:
-        cluster_ids.append(np.nan)
-    prev_flag = row["flag"]
-oos["cluster"] = cluster_ids
-
-clusters = (
-    oos.dropna(subset=["cluster"])
-    .groupby("cluster")
-    .agg(start=("date", "min"), end=("date", "max"), n_days=("date", "count"),
-         max_abs_z=("z_ntotal", lambda s: s.abs().max()))
-    .sort_values("start")
-    .reset_index(drop=True)
-)
+oos = oos.dropna(subset=["z_ntotal"]).reset_index(drop=True)
+oos, clusters = cluster_anomalies(oos, "z_ntotal")
 print(f"\n{len(clusters)} out-of-sample anomaly clusters flagged (|z| > {THRESH}) on Malacca vessel counts.")
 
 # ---------------------------------------------------------------------------
 # 4. Cross-reference against documented events (bounded window for open ones)
 # ---------------------------------------------------------------------------
-def matched_event(c_start, c_end, pad_days=14):
-    for _, ev in events.iterrows():
-        ev_start = ev["fromdate"] - pd.Timedelta(days=pad_days)
-        if pd.notna(ev["todate"]):
-            ev_end = ev["todate"] + pd.Timedelta(days=pad_days)
-        else:
-            ev_end = ev["fromdate"] + pd.Timedelta(days=OPEN_EVENT_WINDOW_DAYS)
-        if c_start <= ev_end and c_end >= ev_start:
-            return ev["eventname"]
-    return None
-
-clusters["matched_event"] = [matched_event(r.start, r.end) for r in clusters.itertuples()]
+clusters["matched_event"] = [matched_event(events, r.start, r.end) for r in clusters.itertuples()]
 n_matched = clusters["matched_event"].notna().sum()
 print(f"{n_matched} of {len(clusters)} clusters fall within +/-14 days of a documented disruption "
       f"event (open-ended events bounded to their first {OPEN_EVENT_WINDOW_DAYS} days).")
