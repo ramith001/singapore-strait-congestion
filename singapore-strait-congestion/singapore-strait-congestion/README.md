@@ -15,12 +15,14 @@ https://github.com/ramith001/singapore-strait-congestion (suggested repo name)
 - Built the baseline with a rolling 2-year re-fit (numpy OLS, refit quarterly) instead of one static trend extrapolated forward for years; an initial static-trend version flagged anomalies almost exclusively in the final year of data and none in 2024, a sign of trend-extrapolation drift rather than genuine disruption, so it was rejected in favor of the rolling design before drawing any conclusions from it.
 - Validated flagged anomalies against a ground-truth calendar of documented global shipping disruptions (COVID-19, Red Sea Tensions, Panama Canal drought restrictions, the Francis Scott Key Bridge collapse, the US ports strike, the 2026 Strait of Hormuz tensions): 83 of 129 flagged anomaly clusters fall within 14 days of a documented event (64%, against about 56% expected if the same clusters sat at random dates, since the calendar covers much of 2020-2026), and the four largest anomalies in the entire 2019-2026 series (z-scores up to 7.3) all land inside the COVID-19 window, correctly identifying it as the single largest genuine disruption rather than treating it as noise.
 - Flagged, rather than hid, weaker matches: two 2026 clusters coincide with the Strait of Hormuz tensions despite Hormuz having no direct shipping-lane overlap with Malacca, so they're reported as a plausible but mechanistically unconfirmed link, not stated as a confirmed cause.
+- Ran a robustness/sensitivity check (`sensitivity_analysis.py`) on the headline 64%-vs-56% result across a 5×5 grid of anomaly thresholds (|z| > 1.5 to 3.5) and event-matching windows (±3 to ±30 days): the real match rate beats the random-placement chance rate in all 25 grid cells, from +2pp at the loosest threshold up to +28pp at the strictest, confirming the real-vs-chance gap isn't an artifact of the specific (2.5, 14-day) choice reported above. See `data/chart_sensitivity_heatmap.png`.
 - Tech stack: Python, requests, Pandas, NumPy, matplotlib.
 
 ## Files
 - `fetch_data.py` — pulls the raw daily data and disruption calendar from PortWatch's public API (no key required) into `data/`.
 - `baseline.py` — the shared rolling out-of-sample fit, anomaly clustering and event matching, used by both scripts below.
 - `model_selection.py` — the three-way target comparison above; regenerates every model-selection number in this README.
+- `sensitivity_analysis.py` — checks whether the headline match-rate-vs-chance result holds across a grid of anomaly thresholds and matching windows; produces `data/sensitivity_grid.csv` and `data/chart_sensitivity_heatmap.png`.
 - `analysis.py` — builds the rolling out-of-sample baseline, flags anomalies, cross-references them against the disruption calendar, and produces `data/chart_overview.png`.
 - `data/` — raw and processed CSVs, plus the anomaly cluster table.
 
