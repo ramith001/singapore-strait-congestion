@@ -67,9 +67,18 @@ def rolling_oos_fit(df, colname):
 
 
 def cluster_anomalies(oos, zcol):
-    """Flag |z| > THRESH on `zcol` and group flagged days (gap <= 3 days) into
-    clusters. `oos` must be date-sorted with a default index. Adds `flag` and
-    `cluster` columns and returns (oos, clusters table)."""
+    """Flag |z| > THRESH on `zcol` and group the flagged days into clusters,
+    where a cluster is a run of consecutive flagged rows. A flagged row starts a
+    new cluster whenever the previous row was not flagged, so two flagged days
+    with even one unflagged day between them are two clusters. The code also
+    tests for a gap of more than 3 days since the previous flagged date, but
+    that can only decide anything if the rows themselves skip more than 3 days,
+    which they do not in this dataset (daily data with no missing dates), so it
+    never changes the result here. (An earlier version of this docstring said
+    flagged days within 3 days were merged into one cluster; the code has never
+    done that. Documentation fix only: the logic is unchanged.)
+    `oos` must be date-sorted with a default index. Adds `flag` and `cluster`
+    columns and returns (oos, clusters table)."""
     oos = oos.copy()
     oos["flag"] = oos[zcol].abs() > THRESH
     cluster_ids, cid, prev_flag, prev_date = [], 0, False, None
