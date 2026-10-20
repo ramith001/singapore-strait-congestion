@@ -1,0 +1,2 @@
+covered_days,uncovered_days,clusters_on_covered_days,clusters_on_uncovered_days,rate_covered_per_100d,rate_uncovered_per_100d,shifted_mask_median,shifted_mask_95pct,p_value
+1280,1069,78,44,6.09375,4.11599625818522,65.0,88.0,0.21015796840631873

@@ -1,0 +1,130 @@
+start,end,n_days,max_abs_z,sign,matched,matched_event,edge_window,single_day,holiday,other_event,singapore_also_flagged,types_beyond_2,holiday_hit,other_event_hit,broad_across_types,explained_by_a_check
+2020-01-01,2020-01-02,2,3.4088713947107063,-1,False,,True,False,New Year's Day;other public holiday,,True,2,True,False,False,True
+2020-01-04,2020-01-04,1,3.0695916138180195,-1,False,,True,True,,,True,2,False,False,False,True
+2020-01-06,2020-01-12,7,5.62742487610006,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,True,False,,,True,3,False,False,True,True
+2020-01-15,2020-01-16,2,4.1540473875113255,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,True,False,,,True,3,False,False,True,True
+2020-01-18,2020-01-26,9,5.140209732182318,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,True,False,Lunar New Year;other public holiday,,True,3,True,False,True,True
+2020-02-02,2020-03-22,50,7.295788307190051,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,True,False,other public holiday,,True,3,True,False,True,True
+2020-03-24,2020-03-29,6,6.663954421289544,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,True,False,other public holiday,,True,3,True,False,True,True
+2020-04-07,2020-04-07,1,3.071557774559321,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,2,False,False,False,False
+2020-04-18,2020-04-18,1,2.5564646047887574,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,0,False,False,False,False
+2020-04-21,2020-04-21,1,3.328623321545835,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,2,False,False,False,False
+2020-04-29,2020-04-29,1,2.504254911562764,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,2,False,False,False,False
+2020-05-01,2020-05-01,1,2.9573453488806885,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,other public holiday,,True,2,True,False,False,True
+2020-05-16,2020-05-16,1,3.130622584230508,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,1,False,False,False,False
+2020-05-24,2020-05-24,1,2.955948772033804,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,Hari Raya Aidilfitri,,True,2,True,False,False,True
+2020-06-03,2020-06-03,1,2.8037890044849747,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,2,False,False,False,False
+2020-07-05,2020-07-05,1,2.61604072405153,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,2,False,False,False,False
+2020-10-20,2020-10-20,1,2.762466995528466,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,MOLAVE-20 (TC),False,1,False,True,False,True
+2020-12-08,2020-12-08,1,2.6369788652066366,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,other public holiday,,False,2,True,False,False,True
+2021-01-26,2021-01-26,1,3.9218585525082297,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,2,False,False,False,False
+2021-02-27,2021-02-27,1,3.945850295615586,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,4,False,False,True,False
+2021-04-08,2021-04-10,3,2.8098253624529903,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,True,2,False,False,False,False
+2021-04-12,2021-04-12,1,2.723973025408389,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,1,False,False,False,False
+2021-04-30,2021-05-01,2,4.056433653475333,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,other public holiday,,True,1,True,False,False,True
+2021-05-03,2021-05-03,1,2.9670996820146085,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,1,False,False,False,False
+2021-05-05,2021-05-05,1,3.047221176726252,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,True,2,False,False,False,False
+2021-07-05,2021-07-05,1,4.580747033350596,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,3,False,False,True,False
+2021-07-21,2021-07-22,2,3.2386611801196503,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,Hari Raya Aidilfitri,,False,1,True,False,False,True
+2021-07-26,2021-07-26,1,2.82347233827697,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,1,False,False,False,False
+2021-07-28,2021-07-28,1,3.1966694776478493,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,1,False,False,False,False
+2021-07-31,2021-07-31,1,2.96001277528662,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,1,False,False,False,False
+2021-08-20,2021-08-21,2,3.7865823392067695,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,True,2,False,False,False,False
+2021-10-11,2021-10-12,2,3.6101848685427234,-1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,False,2,False,False,False,False
+2021-11-09,2021-11-18,10,3.762904390087314,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,False,3,False,False,True,False
+2021-11-20,2021-11-22,3,3.073045051407133,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,False,1,False,False,False,False
+2021-11-24,2021-11-24,1,3.465624080060992,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,2,False,False,False,False
+2021-11-27,2021-11-27,1,2.620101585386595,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,2,False,False,False,False
+2021-11-29,2021-11-29,1,3.9898728377768906,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,,False,3,False,False,True,False
+2021-12-01,2021-12-04,4,3.5199793772998067,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,,False,2,False,False,False,False
+2021-12-06,2021-12-07,2,2.945546427164502,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,RAI-21 (TC),False,1,False,True,False,True
+2021-12-12,2021-12-14,3,3.5592016950280123,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,False,,RAI-21 (TC),False,2,False,True,False,True
+2021-12-20,2021-12-20,1,3.8447329557889502,1,True,COVID-19 GLOBAL SHIPPING DISRUPTION,False,True,,RAI-21 (TC),False,2,False,True,False,True
+2022-01-21,2022-01-21,1,2.562408203625665,1,False,,False,True,,,False,1,False,False,False,False
+2022-01-26,2022-01-26,1,2.86987162659059,1,False,,False,True,,,False,1,False,False,False,False
+2022-01-31,2022-01-31,1,2.9155437525277983,1,False,,False,True,Lunar New Year;other public holiday,,True,2,True,False,False,True
+2022-02-03,2022-02-03,1,2.8788799419450437,1,False,,False,True,Lunar New Year;other public holiday,,False,2,True,False,False,True
+2022-02-07,2022-02-09,3,3.2921763505030768,1,False,,False,False,,,False,3,False,False,True,False
+2022-02-16,2022-02-17,2,2.8415617175772403,1,False,,False,False,,,False,2,False,False,False,False
+2022-02-19,2022-02-19,1,3.40807601876224,1,False,,False,True,,,False,4,False,False,True,False
+2022-03-01,2022-03-01,1,2.548665237287289,1,False,,False,True,other public holiday,,False,2,True,False,False,True
+2022-03-03,2022-03-06,4,3.605489429126595,1,False,,False,False,other public holiday,,False,3,True,False,True,True
+2022-03-09,2022-03-09,1,3.427765428776604,1,False,,False,True,,,False,3,False,False,True,False
+2022-03-12,2022-03-12,1,2.510289315627352,1,False,,False,True,,,False,1,False,False,False,False
+2022-03-14,2022-03-14,1,2.9140202458670346,1,False,,False,True,,,False,1,False,False,False,False
+2022-03-16,2022-03-16,1,2.534058759100704,1,False,,False,True,,,False,2,False,False,False,False
+2022-03-18,2022-03-18,1,2.6585313908151345,1,False,,False,True,,,False,1,False,False,False,False
+2022-03-20,2022-03-20,1,2.837809768906291,1,False,,False,True,,,False,3,False,False,True,False
+2022-06-05,2022-06-05,1,3.046815996460109,1,False,,False,True,other public holiday,,True,2,True,False,False,True
+2022-06-09,2022-06-09,1,2.555656833876574,1,False,,False,True,,,False,1,False,False,False,False
+2022-06-14,2022-06-14,1,2.559327666007479,1,False,,False,True,,,False,2,False,False,False,False
+2022-06-17,2022-06-17,1,2.743690698536281,1,False,,False,True,,,False,2,False,False,False,False
+2022-07-17,2022-07-17,1,2.5756792062082554,1,False,,False,True,,,False,2,False,False,False,False
+2022-11-20,2022-11-20,1,2.791412417556097,-1,False,,False,True,other public holiday,Earthquake in Indonesia (EQ),False,2,True,True,False,True
+2022-12-10,2022-12-10,1,2.539368682729704,-1,False,,False,True,,,True,1,False,False,False,False
+2022-12-18,2022-12-18,1,2.8488391128675032,-1,False,,False,True,,,False,2,False,False,False,False
+2022-12-26,2022-12-26,1,2.6275236361770866,-1,False,,False,True,Christmas;Hari Raya Aidilfitri;other public holiday,,False,1,True,False,False,True
+2023-01-01,2023-01-03,3,3.031297199798155,-1,False,,False,False,New Year's Day;other public holiday,,False,2,True,False,False,True
+2023-01-07,2023-01-07,1,2.5708907523771667,-1,False,,False,True,,,False,1,False,False,False,False
+2023-01-11,2023-01-11,1,2.9900705217605883,-1,False,,False,True,,,False,1,False,False,False,False
+2023-01-19,2023-01-23,5,3.432571846247701,-1,False,,False,False,Lunar New Year;other public holiday,,False,2,True,False,False,True
+2023-01-25,2023-02-02,9,3.926286759352057,-1,False,,False,False,Lunar New Year;other public holiday,,False,4,True,False,True,True
+2023-02-04,2023-02-04,1,2.6012196668844787,-1,False,,False,True,,,False,1,False,False,False,False
+2023-02-06,2023-02-06,1,2.572129024065402,-1,False,,False,True,,,False,1,False,False,False,False
+2023-02-09,2023-02-11,3,4.1551087437203895,-1,False,,False,False,,,False,3,False,False,True,False
+2023-02-13,2023-02-13,1,2.762197855441745,-1,False,,False,True,,,False,1,False,False,False,False
+2023-02-15,2023-02-15,1,2.689197621109217,-1,False,,False,True,,,True,1,False,False,False,False
+2023-02-17,2023-02-18,2,2.8688479422586983,-1,False,,False,False,other public holiday,,True,1,True,False,False,True
+2023-02-23,2023-02-28,6,3.4052166853340817,-1,False,,False,False,,,False,2,False,False,False,False
+2023-03-04,2023-03-04,1,3.193598327967793,-1,False,,False,True,,,False,3,False,False,True,False
+2023-03-09,2023-03-09,1,3.172225404504573,-1,False,,False,True,,,False,3,False,False,True,False
+2023-03-14,2023-03-14,1,2.873142273387906,-1,False,,False,True,,,False,2,False,False,False,False
+2023-12-25,2023-12-25,1,2.7076717598067144,-1,True,RESTRICTIONS PANAMA CANAL,False,True,Christmas;Hari Raya Aidilfitri;other public holiday,,False,2,True,False,False,True
+2024-01-29,2024-01-29,1,2.5495790708511907,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,2,False,False,False,False
+2024-02-14,2024-02-14,1,2.617945256655996,-1,True,RESTRICTIONS PANAMA CANAL,False,True,other public holiday,,False,1,True,False,False,True
+2024-03-05,2024-03-05,1,2.575268451645347,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,0,False,False,False,False
+2024-03-08,2024-03-08,1,2.7306269168213304,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,0,False,False,False,False
+2024-04-06,2024-04-06,1,3.075422319935644,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,2,False,False,False,False
+2024-04-17,2024-04-17,1,2.7153371750423205,1,True,RESTRICTIONS PANAMA CANAL,False,True,,,True,1,False,False,False,False
+2024-04-21,2024-04-21,1,3.3307507027818173,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,True,2,False,False,False,False
+2024-04-27,2024-04-27,1,2.524081840446425,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,True,1,False,False,False,False
+2024-05-15,2024-05-15,1,2.8417060706161683,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,2,False,False,False,False
+2024-05-26,2024-05-26,1,3.0099719176871846,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,True,1,False,False,False,False
+2024-06-01,2024-06-01,1,3.452415776204317,-1,True,RESTRICTIONS PANAMA CANAL,False,True,other public holiday,,True,3,True,False,True,True
+2024-06-07,2024-06-07,1,2.675001300902706,-1,True,RESTRICTIONS PANAMA CANAL,False,True,,,False,1,False,False,False,False
+2024-10-30,2024-10-30,1,2.880242233076435,-1,True,RED SEA TENSIONS,False,True,Deepavali,YINXING-24 (TC),False,2,True,True,False,True
+2024-11-05,2024-11-06,2,3.4290732847299945,-1,True,RED SEA TENSIONS,False,False,,MAN-YI-24 (TC);YINXING-24 (TC),False,0,False,True,False,True
+2024-11-08,2024-11-08,1,2.6208091709650683,-1,True,RED SEA TENSIONS,False,True,,MAN-YI-24 (TC);YINXING-24 (TC),False,1,False,True,False,True
+2024-11-13,2024-11-13,1,2.5320141601808457,-1,True,RED SEA TENSIONS,False,True,,MAN-YI-24 (TC);YINXING-24 (TC),False,1,False,True,False,True
+2025-09-19,2025-09-19,1,3.200391402958858,1,False,,False,True,,BUALOI-25 (TC);RAGASA-25 (TC),False,2,False,True,False,True
+2025-09-29,2025-09-29,1,3.3907444441662657,-1,False,,False,True,,BUALOI-25 (TC);RAGASA-25 (TC);MATMO-25 (TC);Earthquake in Philippines (EQ),False,2,False,True,False,True
+2025-10-06,2025-10-06,1,2.575308105083709,1,False,,False,True,,MATMO-25 (TC);Earthquake in Philippines (EQ),False,0,False,True,False,True
+2025-10-11,2025-10-11,1,2.629376553515512,1,False,,False,True,,MATMO-25 (TC),False,0,False,True,False,True
+2025-11-11,2025-11-11,1,3.829596840068016,1,False,,False,True,,KALMAEGI-25 (TC),False,1,False,True,False,True
+2026-03-16,2026-03-16,1,2.9193796787494395,-1,True,HORMUZ-26,False,True,,,False,0,False,False,False,False
+2026-03-21,2026-03-21,1,3.2947338986189263,-1,True,HORMUZ-26,False,True,Hari Raya Aidilfitri,,True,2,True,False,False,True
+2026-03-23,2026-03-23,1,3.6067034152982456,-1,True,HORMUZ-26,False,True,Hari Raya Aidilfitri,,True,3,True,False,True,True
+2026-03-28,2026-03-28,1,3.612997465772168,-1,True,HORMUZ-26,False,True,,,False,2,False,False,False,False
+2026-04-01,2026-04-02,2,3.53356798189605,-1,True,HORMUZ-26,False,False,other public holiday,,False,1,True,False,False,True
+2026-04-08,2026-04-08,1,2.9665454861377167,-1,True,HORMUZ-26,False,True,,,False,1,False,False,False,False
+2026-04-22,2026-04-22,1,2.715722773176589,-1,True,HORMUZ-26,False,True,,,True,1,False,False,False,False
+2026-04-28,2026-04-28,1,2.8393290499041672,-1,True,HORMUZ-26,False,True,,,False,1,False,False,False,False
+2026-05-11,2026-05-11,1,3.3371780055127265,-1,True,HORMUZ-26,False,True,,,False,2,False,False,False,False
+2026-05-16,2026-05-16,1,2.914913367417996,-1,True,HORMUZ-26,False,True,,,False,2,False,False,False,False
+2026-05-18,2026-05-20,3,3.208927096969252,-1,True,HORMUZ-26,False,False,,,False,1,False,False,False,False
+2026-05-23,2026-05-23,1,3.4321872411237195,-1,True,HORMUZ-26,False,True,,,False,2,False,False,False,False
+2026-05-28,2026-05-28,1,2.774689337000497,-1,True,HORMUZ-26,False,True,Hari Raya Aidilfitri,,True,1,True,False,False,True
+2026-06-02,2026-06-02,1,2.570071896884017,-1,True,HORMUZ-26,False,True,Vesak;other public holiday,,True,2,True,False,False,True
+2026-06-05,2026-06-05,1,3.0751762880856863,-1,True,HORMUZ-26,False,True,,,True,2,False,False,False,False
+2026-06-07,2026-06-07,1,2.871233991403128,-1,True,HORMUZ-26,False,True,,,False,1,False,False,False,False
+2026-06-19,2026-06-19,1,2.807296879752533,-1,True,HORMUZ-26,False,True,,,True,1,False,False,False,False
+2026-06-29,2026-06-29,1,3.1075240136707825,-1,True,HORMUZ-26,False,True,,,True,2,False,False,False,False
+2026-07-10,2026-07-10,1,3.858837962700969,-1,True,HORMUZ-26,False,True,,,False,2,False,False,False,False
+2026-07-18,2026-07-19,2,5.128755057377127,-1,True,HORMUZ-26,False,False,,,True,3,False,False,True,False
+2026-07-21,2026-07-21,1,2.5774102789616027,-1,True,HORMUZ-26,False,True,,,True,2,False,False,False,False
+2026-07-31,2026-07-31,1,2.663703046556915,-1,True,HORMUZ-26,False,True,,,True,1,False,False,False,False
+2026-08-03,2026-08-03,1,3.43061493710598,-1,True,HORMUZ-26,False,True,,,True,1,False,False,False,False
+2026-08-15,2026-08-20,6,4.436851955119976,-1,True,HORMUZ-26,False,False,other public holiday,Earthquake in Indonesia (EQ),True,2,True,True,False,True
+2026-08-23,2026-08-23,1,3.392383939781084,-1,True,HORMUZ-26,False,True,,,True,2,False,False,False,False
+2026-08-25,2026-08-26,2,3.0263049682664303,-1,True,HORMUZ-26,False,False,other public holiday,,True,3,True,False,True,True
+2026-09-04,2026-09-04,1,3.1389663266537906,-1,True,HORMUZ-26,False,True,,,True,1,False,False,False,False
