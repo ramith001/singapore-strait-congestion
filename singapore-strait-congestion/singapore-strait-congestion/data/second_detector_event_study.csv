@@ -1,0 +1,7 @@
+detector,set,post_minus_pre_signed_z,signed_placebo_p,post_minus_pre_abs_z,abs_placebo_p,events_flagged_within_14d
+"A: trend + weekday + month, refit quarterly",All six events,-0.42008239004781167,0.115,0.14638355130583058,0.152,3
+"A: trend + weekday + month, refit quarterly",Without COVID,-0.40674640297015985,0.1575,0.07801912237801542,0.2785,2
+B1: weekly median,All six events,-0.09093430597050282,0.615,0.14124878997628,0.0855,2
+B1: weekly median,Without COVID,-0.048289265718953846,0.803,0.05670586009222169,0.268,1
+B2: seasonal decomposition,All six events,,0.0,,0.0,2
+B2: seasonal decomposition,Without COVID,-0.0744931658035014,0.638,0.003089568229613704,0.5105,2

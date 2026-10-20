@@ -1,0 +1,367 @@
+series,detector,start,end,n_days,max_abs_z,matched_event
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-04-07,2020-04-07,1,3.0715577745593623,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-04-18,2020-04-18,1,2.556464604788799,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-04-21,2020-04-21,1,3.328623321545877,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-04-29,2020-04-29,1,2.5042549115628057,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-05-01,2020-05-01,1,2.95734534888072,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-05-16,2020-05-16,1,3.13062258423055,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-05-24,2020-05-24,1,2.9559487720338455,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-06-03,2020-06-03,1,2.8037890044849223,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-07-05,2020-07-05,1,2.6160407240515506,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-10-20,2020-10-20,1,2.762466995528496,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2020-12-08,2020-12-08,1,2.636978865206656,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-01-26,2021-01-26,1,3.92185855250827,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-02-27,2021-02-27,1,3.945850295615546,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-04-08,2021-04-10,3,2.8098253624530107,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-04-12,2021-04-12,1,2.7239730254084193,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-04-30,2021-05-01,2,4.056433653475373,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-05-03,2021-05-03,1,2.9670996820146582,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-05-05,2021-05-05,1,3.0472211767263016,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-07-05,2021-07-05,1,4.58074703335053,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-07-21,2021-07-22,2,3.2386611801195753,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-07-26,2021-07-26,1,2.823472338276895,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-07-28,2021-07-28,1,3.1966694776477835,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-07-31,2021-07-31,1,2.9600127752865544,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-08-20,2021-08-21,2,3.786582339206836,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-10-11,2021-10-12,2,3.610184868542713,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-11-09,2021-11-18,10,3.762904390087348,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-11-20,2021-11-22,3,3.0730450514071497,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-11-24,2021-11-24,1,3.465624080061009,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-11-27,2021-11-27,1,2.620101585386621,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-11-29,2021-11-29,1,3.9898728377769075,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-12-01,2021-12-04,4,3.5199793772998147,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-12-06,2021-12-07,2,2.945546427164519,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-12-12,2021-12-14,3,3.559201695028029,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2021-12-20,2021-12-20,1,3.844732955788967,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-01-21,2022-01-21,1,2.5624082036256177,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-01-26,2022-01-26,1,2.8698716265905584,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-01-31,2022-01-31,1,2.9155437525277588,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-02-03,2022-02-03,1,2.8788799419450197,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-02-07,2022-02-09,3,3.2921763505030532,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-02-16,2022-02-17,2,2.8415617175772168,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-02-19,2022-02-19,1,3.4080760187622166,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-01,2022-03-01,1,2.5486652372872656,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-03,2022-03-06,4,3.605489429126564,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-09,2022-03-09,1,3.427765428776573,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-12,2022-03-12,1,2.51028931562732,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-14,2022-03-14,1,2.914020245866995,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-16,2022-03-16,1,2.534058759100672,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-18,2022-03-18,1,2.658531390815103,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-03-20,2022-03-20,1,2.8378097689062516,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-06-05,2022-06-05,1,3.046815996460109,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-06-09,2022-06-09,1,2.5556568338765735,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-06-14,2022-06-14,1,2.5593276660074786,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-06-17,2022-06-17,1,2.7436906985362732,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-07-17,2022-07-17,1,2.5756792062083202,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-11-20,2022-11-20,1,2.791412417556152,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-12-10,2022-12-10,1,2.5393686827297666,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-12-18,2022-12-18,1,2.848839112867529,
+Malacca total,"A: trend + weekday + month, refit quarterly",2022-12-26,2022-12-26,1,2.6275236361771293,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-01-01,2023-01-03,3,3.0312971997981806,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-01-07,2023-01-07,1,2.5708907523771924,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-01-11,2023-01-11,1,2.9900705217606136,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-01-19,2023-01-23,5,3.4325718462477357,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-01-25,2023-02-02,9,3.9262867593520907,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-04,2023-02-04,1,2.601219666884513,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-06,2023-02-06,1,2.572129024065453,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-09,2023-02-11,3,4.155108743720441,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-13,2023-02-13,1,2.762197855441797,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-15,2023-02-15,1,2.6891976211092508,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-17,2023-02-18,2,2.8688479422587494,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-02-23,2023-02-28,6,3.4052166853341244,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-03-04,2023-03-04,1,3.193598327967836,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-03-09,2023-03-09,1,3.1722254045046245,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-03-14,2023-03-14,1,2.873142273387949,
+Malacca total,"A: trend + weekday + month, refit quarterly",2023-12-25,2023-12-25,1,2.707671759806752,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-01-29,2024-01-29,1,2.5495790708511894,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-02-14,2024-02-14,1,2.6179452566560335,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-03-05,2024-03-05,1,2.5752684516453845,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-03-08,2024-03-08,1,2.7306269168213557,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-04-06,2024-04-06,1,3.0754223199357207,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-04-17,2024-04-17,1,2.7153371750422295,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-04-21,2024-04-21,1,3.330750702781894,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-04-27,2024-04-27,1,2.5240818404465024,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-05-15,2024-05-15,1,2.841706070616258,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-05-26,2024-05-26,1,3.0099719176872872,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-06-01,2024-06-01,1,3.452415776204394,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-06-07,2024-06-07,1,2.6750013009027955,RESTRICTIONS PANAMA CANAL
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-10-30,2024-10-30,1,2.880242233076336,RED SEA TENSIONS
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-11-05,2024-11-06,2,3.4290732847298706,RED SEA TENSIONS
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-11-08,2024-11-08,1,2.620809170964969,RED SEA TENSIONS
+Malacca total,"A: trend + weekday + month, refit quarterly",2024-11-13,2024-11-13,1,2.532014160180734,RED SEA TENSIONS
+Malacca total,"A: trend + weekday + month, refit quarterly",2025-09-19,2025-09-19,1,3.2003914029588074,
+Malacca total,"A: trend + weekday + month, refit quarterly",2025-09-29,2025-09-29,1,3.3907444441663173,
+Malacca total,"A: trend + weekday + month, refit quarterly",2025-10-06,2025-10-06,1,2.575308105083671,
+Malacca total,"A: trend + weekday + month, refit quarterly",2025-10-11,2025-10-11,1,2.6293765535154616,
+Malacca total,"A: trend + weekday + month, refit quarterly",2025-11-11,2025-11-11,1,3.829596840067952,
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-03-16,2026-03-16,1,2.9193796787494133,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-03-21,2026-03-21,1,3.294733898618887,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-03-23,2026-03-23,1,3.6067034152982194,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-03-28,2026-03-28,1,3.6129974657721293,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-04-01,2026-04-02,2,3.5335679818960237,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-04-08,2026-04-08,1,2.9665454861376905,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-04-22,2026-04-22,1,2.7157227731765627,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-04-28,2026-04-28,1,2.839329049904154,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-05-11,2026-05-11,1,3.3371780055127003,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-05-16,2026-05-16,1,2.9149133674179697,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-05-18,2026-05-20,3,3.2089270969692385,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-05-23,2026-05-23,1,3.432187241123681,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-05-28,2026-05-28,1,2.7746893370004964,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-06-02,2026-06-02,1,2.570071896883978,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-06-05,2026-06-05,1,3.0751762880856597,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-06-07,2026-06-07,1,2.871233991403089,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-06-19,2026-06-19,1,2.8072968797525073,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-06-29,2026-06-29,1,3.107524013670756,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-07-10,2026-07-10,1,3.858837962700942,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-07-18,2026-07-19,2,5.128755057377087,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-07-21,2026-07-21,1,2.577410278961564,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-07-31,2026-07-31,1,2.663703046556889,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-08-03,2026-08-03,1,3.4306149371059407,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-08-15,2026-08-20,6,4.4368519551199235,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-08-23,2026-08-23,1,3.3923839397810327,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-08-25,2026-08-26,2,3.026304968266379,HORMUZ-26
+Malacca total,"A: trend + weekday + month, refit quarterly",2026-09-04,2026-09-04,1,3.138966326653688,HORMUZ-26
+Malacca total,B1: weekly median,2020-10-20,2020-10-20,1,3.188418252692637,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-01-26,2021-01-26,1,3.0536554295624425,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-02-27,2021-02-27,1,2.5414393941421207,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-03-13,2021-03-13,1,2.710945317432105,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-06-22,2021-06-22,1,2.751895428245144,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-07-05,2021-07-05,1,4.5180955441708335,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-07-22,2021-07-22,1,3.0856329382908396,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-07-24,2021-07-24,1,2.5721747135743014,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-07-31,2021-07-31,1,2.860736739452195,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-08-20,2021-08-21,2,4.010875472402984,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-08-25,2021-08-25,1,2.5712295424903564,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-08-30,2021-08-30,1,2.9309263570026083,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-10-11,2021-10-11,1,3.0896457567437396,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-11-08,2021-11-18,11,5.833737263969456,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2021-11-20,2021-11-22,3,2.9512626830607043,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B1: weekly median,2022-03-07,2022-03-07,1,2.8714117426038293,
+Malacca total,B1: weekly median,2022-04-24,2022-04-24,1,2.6321859998795736,
+Malacca total,B1: weekly median,2022-07-01,2022-07-01,1,2.5501076537482095,
+Malacca total,B1: weekly median,2022-10-02,2022-10-02,1,2.6922665170983993,
+Malacca total,B1: weekly median,2022-10-11,2022-10-11,1,3.5101693211328726,
+Malacca total,B1: weekly median,2023-01-08,2023-01-08,1,3.3973483372871645,
+Malacca total,B1: weekly median,2023-01-26,2023-01-26,1,2.9886507260533843,
+Malacca total,B1: weekly median,2023-02-10,2023-02-10,1,3.956953862743667,
+Malacca total,B1: weekly median,2023-02-16,2023-02-16,1,2.8020984871854546,
+Malacca total,B1: weekly median,2023-03-16,2023-03-16,1,2.816138067626632,
+Malacca total,B1: weekly median,2023-03-28,2023-03-28,1,2.7220979962032392,
+Malacca total,B1: weekly median,2023-03-30,2023-03-30,1,2.8961269712189397,
+Malacca total,B1: weekly median,2023-08-20,2023-08-20,1,2.757676825404589,
+Malacca total,B1: weekly median,2023-12-25,2023-12-25,1,2.808773822810162,RESTRICTIONS PANAMA CANAL
+Malacca total,B1: weekly median,2024-04-17,2024-04-17,1,2.5750510317532522,RESTRICTIONS PANAMA CANAL
+Malacca total,B1: weekly median,2024-05-26,2024-05-26,1,2.926189215399073,RESTRICTIONS PANAMA CANAL
+Malacca total,B1: weekly median,2024-11-06,2024-11-06,1,2.5146575425504167,RED SEA TENSIONS
+Malacca total,B1: weekly median,2024-11-08,2024-11-08,1,2.6384797538744125,RED SEA TENSIONS
+Malacca total,B1: weekly median,2024-11-20,2024-11-20,1,3.461359741070322,RED SEA TENSIONS
+Malacca total,B1: weekly median,2025-06-03,2025-06-03,1,2.5670556294558073,
+Malacca total,B1: weekly median,2025-08-06,2025-08-06,1,3.360649614237435,
+Malacca total,B1: weekly median,2025-08-17,2025-08-17,1,3.167671511298393,
+Malacca total,B1: weekly median,2025-09-29,2025-09-29,1,4.557276588131487,
+Malacca total,B1: weekly median,2025-11-11,2025-11-11,1,3.1168200746092727,
+Malacca total,B1: weekly median,2026-03-16,2026-03-16,1,3.001335386984829,HORMUZ-26
+Malacca total,B1: weekly median,2026-03-21,2026-03-21,1,3.4769162236260573,HORMUZ-26
+Malacca total,B1: weekly median,2026-03-23,2026-03-23,1,3.7419774451840317,HORMUZ-26
+Malacca total,B1: weekly median,2026-03-28,2026-03-28,1,3.5119105937160766,HORMUZ-26
+Malacca total,B1: weekly median,2026-04-01,2026-04-01,1,2.8979573776858265,HORMUZ-26
+Malacca total,B1: weekly median,2026-07-19,2026-07-19,1,3.2489720234460293,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2021-01-26,2021-01-26,1,3.713392164974063,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-02-27,2021-02-27,1,2.7171702688305195,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-07-05,2021-07-05,1,3.2922557368846186,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-08-20,2021-08-21,2,4.267880545355429,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-10-11,2021-10-11,1,3.3828411232705506,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-11-08,2021-11-11,4,3.7223303813683017,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2021-11-13,2021-11-14,2,3.0826311335063585,COVID-19 GLOBAL SHIPPING DISRUPTION
+Malacca total,B2: seasonal decomposition,2022-04-24,2022-04-24,1,2.5996195315676824,
+Malacca total,B2: seasonal decomposition,2022-07-17,2022-07-17,1,3.157314532093586,
+Malacca total,B2: seasonal decomposition,2022-09-19,2022-09-19,1,2.6877717984785416,
+Malacca total,B2: seasonal decomposition,2022-10-02,2022-10-02,1,2.5157198527152027,
+Malacca total,B2: seasonal decomposition,2022-10-11,2022-10-11,1,3.025663059282433,
+Malacca total,B2: seasonal decomposition,2022-11-22,2022-11-22,1,2.784311429679501,
+Malacca total,B2: seasonal decomposition,2023-01-08,2023-01-08,1,2.5057929339945866,
+Malacca total,B2: seasonal decomposition,2023-01-26,2023-01-26,1,2.779493280135984,
+Malacca total,B2: seasonal decomposition,2023-02-10,2023-02-10,1,2.9740319192351468,
+Malacca total,B2: seasonal decomposition,2023-03-28,2023-03-28,1,2.811890089075661,
+Malacca total,B2: seasonal decomposition,2023-12-25,2023-12-25,1,2.7121418475126164,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-02-13,2024-02-14,2,2.832231219753407,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-04-17,2024-04-17,1,3.0759764359189568,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-04-21,2024-04-21,1,2.8165509699318734,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-05-26,2024-05-26,1,2.5371952841589263,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-06-26,2024-06-26,1,2.573687409890662,RESTRICTIONS PANAMA CANAL
+Malacca total,B2: seasonal decomposition,2024-10-11,2024-10-11,1,2.8977002518924864,RED SEA TENSIONS
+Malacca total,B2: seasonal decomposition,2024-10-30,2024-10-30,1,2.6470837419037796,RED SEA TENSIONS
+Malacca total,B2: seasonal decomposition,2024-11-06,2024-11-06,1,2.790680740464653,RED SEA TENSIONS
+Malacca total,B2: seasonal decomposition,2025-08-06,2025-08-06,1,3.1447877042105334,
+Malacca total,B2: seasonal decomposition,2025-09-19,2025-09-19,1,2.5785379249869202,
+Malacca total,B2: seasonal decomposition,2025-09-29,2025-09-29,1,4.613522733756469,
+Malacca total,B2: seasonal decomposition,2025-11-11,2025-11-11,1,3.2990584749294105,
+Malacca total,B2: seasonal decomposition,2026-03-21,2026-03-21,1,2.769153497580923,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-03-23,2026-03-23,1,2.6682257269624823,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-03-28,2026-03-28,1,2.6083829397247773,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-04-13,2026-04-13,1,2.568700632493993,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-06-22,2026-06-22,1,2.854873641462784,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-07-10,2026-07-10,1,2.801063768202993,HORMUZ-26
+Malacca total,B2: seasonal decomposition,2026-07-19,2026-07-19,1,3.9288254955796376,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-04-20,2020-04-20,1,2.58538990475157,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-04-24,2020-04-24,1,2.9742360666176544,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-05-03,2020-05-04,2,4.4598643368480895,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-05-11,2020-05-11,1,3.483480602907549,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-05-15,2020-05-15,1,2.8522817906536138,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-05-17,2020-05-17,1,3.2356908704456826,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-05-25,2020-05-26,2,2.788897397420375,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-01,2020-06-01,1,2.57877756917564,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-03,2020-06-03,1,4.17969048794495,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-06,2020-06-06,1,3.0786017954380966,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-14,2020-06-14,1,4.472734127574529,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-21,2020-06-22,2,3.842822569483896,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-28,2020-06-28,1,3.2749287016882938,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-06-30,2020-06-30,1,2.5503127204319895,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-07-05,2020-07-05,1,2.832753593458195,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-08-07,2020-08-07,1,3.24509581801021,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-09-15,2020-09-15,1,2.760192911319895,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-09-23,2020-09-23,1,3.316416621301683,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-10-30,2020-10-30,1,2.718507623510691,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-11-16,2020-11-16,1,3.414245138561045,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2020-12-15,2020-12-15,1,2.5003456284830614,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-01-03,2021-01-03,1,2.6077332659100425,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-02-16,2021-02-16,1,2.7326581662075697,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-03-23,2021-03-23,1,2.540349674200867,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-04-06,2021-04-06,1,3.2000160151445893,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-04-09,2021-04-10,2,3.985301584637457,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-04-17,2021-04-17,1,2.617680434732678,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-04-30,2021-04-30,1,2.5156571214634136,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-05-07,2021-05-07,1,2.57085029091443,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-07-17,2021-07-17,1,2.9201154469523734,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-08-20,2021-08-20,1,2.5904497206647457,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-10-05,2021-10-05,1,2.543139195318973,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2021-10-24,2021-10-24,1,2.576636184212659,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-01-30,2022-01-30,1,2.7781555780589953,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-06-03,2022-06-03,1,2.511698573855168,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-06-24,2022-06-24,1,2.5528259739870824,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-07-28,2022-07-28,1,2.942087652424315,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-08-07,2022-08-07,1,2.9705189214953593,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-08-12,2022-08-12,1,2.581273613718751,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-08-24,2022-08-24,1,2.974032373814184,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-08-31,2022-08-31,1,2.818835105562608,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-09-09,2022-09-09,1,2.6603191904210575,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-09-29,2022-09-29,1,2.512571621205608,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2022-12-13,2022-12-13,1,2.573172159542945,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2023-02-17,2023-02-17,1,2.5782553715745777,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2023-08-08,2023-08-08,1,3.0759409267235993,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2023-09-18,2023-09-18,1,2.6416559037249066,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2023-11-15,2023-11-15,1,2.8094316258378913,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2023-11-30,2023-11-30,1,3.612885408167383,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-01-13,2024-01-13,1,3.791077455994626,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-02-23,2024-02-23,1,2.620938228214238,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-04-20,2024-04-20,1,2.7118398412151308,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-04-25,2024-04-25,1,3.059208624620932,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-05-29,2024-05-29,1,3.0823986040156344,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-07-23,2024-07-23,1,3.6646223304323025,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-07-28,2024-07-28,1,2.7365039213197013,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2024-07-31,2024-07-31,1,2.8924068492003436,RESTRICTIONS PANAMA CANAL
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-01-04,2025-01-04,1,2.5310836944287276,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-01-12,2025-01-12,1,2.8809299071138295,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-03-10,2025-03-10,1,2.555551908298518,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-06-08,2025-06-08,1,2.696406259658624,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-06-14,2025-06-14,1,2.727227457856165,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-07-31,2025-07-31,1,2.613097401117137,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-09-11,2025-09-11,1,2.6867292386950825,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2025-09-25,2025-09-25,1,2.514570885164655,
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-03-22,2026-03-22,1,3.2061221759571104,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-04-20,2026-04-20,1,3.291601636937583,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-05-27,2026-05-27,1,2.9833513151623747,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-06-03,2026-06-03,1,2.621976853013421,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-06-15,2026-06-15,1,2.706903041665139,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-06-20,2026-06-20,1,4.1129081978374185,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-06-26,2026-06-26,1,2.795442780006935,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-07-19,2026-07-19,1,2.7812128626027013,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-08-02,2026-08-02,1,2.6039769043598233,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-08-08,2026-08-08,1,2.573875536265852,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-08-13,2026-08-13,1,3.997806148590776,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-08-23,2026-08-24,2,4.546694337018903,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-08-26,2026-08-26,1,3.033832768075806,HORMUZ-26
+Singapore port calls,"A: trend + weekday + month, refit quarterly",2026-09-02,2026-09-02,1,3.712355913156821,HORMUZ-26
+Singapore port calls,B1: weekly median,2020-04-06,2020-04-06,1,2.5794222919842666,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-04-11,2020-04-11,1,2.878635277300702,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-04-18,2020-04-18,1,2.714814330691429,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-04-24,2020-04-24,1,2.781643247888974,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-05-04,2020-05-04,1,2.522900543794583,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-08-07,2020-08-07,1,2.5005723277875433,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2020-11-16,2020-11-16,1,2.5098485262568997,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2021-01-03,2021-01-03,1,2.745181473283771,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2021-04-06,2021-04-06,1,2.923550041889696,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2021-04-10,2021-04-10,1,2.569338383646912,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2021-06-01,2021-06-01,1,2.8189631934593846,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2021-08-20,2021-08-20,1,2.7485345150146827,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B1: weekly median,2022-01-30,2022-01-30,1,2.891922848212996,
+Singapore port calls,B1: weekly median,2022-04-24,2022-04-24,1,2.790771768189016,
+Singapore port calls,B1: weekly median,2022-06-03,2022-06-03,1,2.5637911014326478,
+Singapore port calls,B1: weekly median,2022-09-29,2022-09-29,1,3.597355531055203,
+Singapore port calls,B1: weekly median,2022-10-22,2022-10-22,1,2.6335858436368587,
+Singapore port calls,B1: weekly median,2023-01-10,2023-01-10,1,2.654572700695029,
+Singapore port calls,B1: weekly median,2023-01-21,2023-01-21,1,3.4473618972714415,
+Singapore port calls,B1: weekly median,2023-01-23,2023-01-23,1,3.6077991648193657,
+Singapore port calls,B1: weekly median,2023-01-29,2023-01-29,1,3.8550529837733527,
+Singapore port calls,B1: weekly median,2023-02-03,2023-02-05,3,2.8764905383083357,
+Singapore port calls,B1: weekly median,2023-02-13,2023-02-13,1,2.518406214574174,
+Singapore port calls,B1: weekly median,2023-02-17,2023-02-17,1,2.844584847434863,
+Singapore port calls,B1: weekly median,2023-10-23,2023-10-23,1,3.065384222510383,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2023-10-27,2023-10-27,1,2.8901717002753933,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2023-11-30,2023-11-30,1,3.39163807658802,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-01-13,2024-01-13,1,3.2510775833231196,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-01-21,2024-01-22,2,2.771732620842276,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-02-24,2024-02-24,1,2.8541380340609708,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-05-29,2024-05-29,1,2.5470441771046577,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-07-23,2024-07-23,1,3.6520892160310883,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-07-28,2024-07-28,1,2.6403262993003893,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B1: weekly median,2024-11-19,2024-11-19,1,2.855315757527257,RED SEA TENSIONS
+Singapore port calls,B1: weekly median,2024-11-22,2024-11-22,1,2.527107815004079,RED SEA TENSIONS
+Singapore port calls,B1: weekly median,2025-01-12,2025-01-12,1,2.832358936875717,
+Singapore port calls,B1: weekly median,2025-03-09,2025-03-10,2,3.1439010942180623,
+Singapore port calls,B1: weekly median,2025-06-08,2025-06-08,1,3.4025578508627246,
+Singapore port calls,B1: weekly median,2025-08-01,2025-08-01,1,2.562081767908194,
+Singapore port calls,B1: weekly median,2025-09-11,2025-09-11,1,2.812754313180579,
+Singapore port calls,B1: weekly median,2025-12-07,2025-12-07,1,2.5422622761978904,
+Singapore port calls,B1: weekly median,2025-12-23,2025-12-23,1,2.553328529537924,
+Singapore port calls,B1: weekly median,2026-01-21,2026-01-21,1,2.6181175475811025,
+Singapore port calls,B1: weekly median,2026-02-12,2026-02-12,1,2.884599242872115,
+Singapore port calls,B1: weekly median,2026-02-17,2026-02-17,1,2.6402444845859945,HORMUZ-26
+Singapore port calls,B1: weekly median,2026-06-20,2026-06-20,1,3.4516741766820243,HORMUZ-26
+Singapore port calls,B1: weekly median,2026-07-16,2026-07-16,1,2.596832949037321,HORMUZ-26
+Singapore port calls,B1: weekly median,2026-09-02,2026-09-02,1,2.948198568337998,HORMUZ-26
+Singapore port calls,B2: seasonal decomposition,2020-04-06,2020-04-06,1,2.7706479671301523,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2020-05-04,2020-05-04,1,2.573743711284534,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2020-08-07,2020-08-07,1,3.609276269130115,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2020-09-15,2020-09-15,1,2.56877612481185,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2020-09-23,2020-09-23,1,2.956951878174226,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2020-11-16,2020-11-16,1,2.6700277927042784,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-03-23,2021-03-23,1,2.7338157333163204,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-04-10,2021-04-10,1,2.675995654163288,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-06-01,2021-06-01,1,2.691588714918555,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-07-17,2021-07-17,1,2.553845304819379,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-07-20,2021-07-20,1,2.577901300421092,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2021-12-18,2021-12-18,1,2.6220976549648936,COVID-19 GLOBAL SHIPPING DISRUPTION
+Singapore port calls,B2: seasonal decomposition,2022-01-30,2022-01-30,1,3.349871338750561,
+Singapore port calls,B2: seasonal decomposition,2022-08-08,2022-08-08,1,2.5962057686979354,
+Singapore port calls,B2: seasonal decomposition,2022-09-29,2022-09-29,1,2.6656953470921656,
+Singapore port calls,B2: seasonal decomposition,2023-02-17,2023-02-17,1,2.669640167359434,
+Singapore port calls,B2: seasonal decomposition,2023-04-02,2023-04-02,1,2.9175477295832897,
+Singapore port calls,B2: seasonal decomposition,2023-07-05,2023-07-05,1,2.6445017376375137,
+Singapore port calls,B2: seasonal decomposition,2023-07-18,2023-07-18,1,2.544150960961762,
+Singapore port calls,B2: seasonal decomposition,2023-08-08,2023-08-08,1,3.0571500133435827,
+Singapore port calls,B2: seasonal decomposition,2023-09-18,2023-09-18,1,2.7897432232840353,
+Singapore port calls,B2: seasonal decomposition,2023-11-30,2023-11-30,1,3.3633421060892066,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B2: seasonal decomposition,2024-01-13,2024-01-13,1,3.3524907503768775,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B2: seasonal decomposition,2024-01-15,2024-01-15,1,2.551548902828752,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B2: seasonal decomposition,2024-02-24,2024-02-24,1,2.7933200441065074,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B2: seasonal decomposition,2024-07-23,2024-07-23,1,3.115355886499909,RESTRICTIONS PANAMA CANAL
+Singapore port calls,B2: seasonal decomposition,2025-01-12,2025-01-12,1,3.3608230651868536,
+Singapore port calls,B2: seasonal decomposition,2025-03-10,2025-03-10,1,3.4223031701499007,
+Singapore port calls,B2: seasonal decomposition,2025-05-11,2025-05-11,1,3.0441389094999143,
+Singapore port calls,B2: seasonal decomposition,2025-05-25,2025-05-25,1,2.8480588352092133,
+Singapore port calls,B2: seasonal decomposition,2025-06-08,2025-06-08,1,2.755147030367621,
+Singapore port calls,B2: seasonal decomposition,2025-08-01,2025-08-01,1,3.141081306098043,
+Singapore port calls,B2: seasonal decomposition,2025-09-11,2025-09-11,1,3.1766522215539865,
+Singapore port calls,B2: seasonal decomposition,2025-09-25,2025-09-25,1,2.7172951282677418,
+Singapore port calls,B2: seasonal decomposition,2026-06-20,2026-06-20,1,3.0605070513915096,HORMUZ-26
