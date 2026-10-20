@@ -115,13 +115,19 @@ if __name__ == "__main__":
 
     print("Fetching Malacca Strait daily vessel transit data (chokepoint5)...")
     mal = fetch_chokepoint("chokepoint5")
-    mal.to_csv("data/malacca_strait_daily.csv", index=False)
     print(f"  -> {len(mal)} rows, {mal['date'].min()} to {mal['date'].max()}")
 
     print("Fetching Singapore port daily trade/port-call data (port1201)...")
-    sg = fetch_port("port1201")
-    sg.to_csv("data/singapore_port_daily.csv", index=False)
+    sg_feats = paginate(f"{BASE}/Daily_Ports_Data/FeatureServer/0/query", where="portid='port1201'", order_by="date ASC")
+    if not sg_feats:
+        # As of 2026-10-20 the API returns no rows for port1201. Nothing is written, so a rerun cannot replace the
+        # committed Malacca file with a longer series that no longer lines up with the Singapore one.
+        raise SystemExit("The PortWatch API returned no rows for port1201 (Singapore); data/ was left unchanged. "
+                         "See the 'Live data refresh' section of the README.")
+    sg = pd.DataFrame(sg_feats).sort_values("date")
     print(f"  -> {len(sg)} rows, {sg['date'].min()} to {sg['date'].max()}")
+    mal.to_csv("data/malacca_strait_daily.csv", index=False)
+    sg.to_csv("data/singapore_port_daily.csv", index=False)
 
     print("Fetching documented disruption events...")
     events = fetch_disruption_events()

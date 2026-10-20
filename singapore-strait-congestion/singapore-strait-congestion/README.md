@@ -1,10 +1,74 @@
 # Singapore Strait Congestion: Out-of-Sample Anomaly Detection
 
-https://github.com/ramith001/singapore-strait-congestion (suggested repo name)
+https://github.com/ramith001/singapore-strait-congestion
 
-> **Update added 2026-10-16, after Part 3. It extends Part 2's baseline-edge finding to the Singapore series and adds a lead-lag result.** The first fitting window (2020-01-01 to 2020-03-30) is artifactual for the Singapore port-call baseline too, with the opposite sign to Malacca (mean z +4.45 for Singapore against -3.86 for Malacca): Singapore's model under-forecasts that window where Malacca's over-forecasts it. Left in, the two artifacts alone make the whole-period correlation between the two anomaly series negative (-0.083) when it is positive (+0.263) without that window. On the actual question, Part 3 finds no sign that either side's anomalies come first: the relationship is contemporaneous, and the lead-lag asymmetry is about zero. See the Part 3 bullet below.
+Can daily vessel counts through the Strait of Malacca and calls at the Port of Singapore be used to flag disruptions as they happen, and do the flagged days line up with documented events? The project builds an out-of-sample baseline (a model fitted only on the past, scored on the next quarter), flags days that are far from its forecast, clusters them, and checks the clusters against IMF/Oxford PortWatch's calendar of documented disruptions (COVID-19, Panama Canal restrictions, Red Sea tensions, the Key Bridge collapse, the US ports strike, Hormuz 2026). Each later part then tests how much of the result depends on the detector, the series, the vessel type, the calendar or the data vintage.
 
-> **Update added 2026-10-15, after Part 2. The Part 1 text below is unchanged, but two qualifications apply.** (1) The match-rate result stands (it is also 64%, 78 of 122 clusters, if the first 90 out-of-sample days are excluded), but it shows that flagged anomalies sit near documented events, not that the events produce a distinctive anomaly path: the Part 2 event study, which lines the z-score up on each of the six event start dates, finds an average path that is not distinguishable from randomly placed dates (post-minus-pre signed z -0.42, placebo p = 0.12; |z| +0.15, p = 0.15; without COVID, p = 0.15 and 0.28). (2) The sentence below about the four largest anomalies (z up to 7.3) all landing in the COVID-19 window reads stronger than the evidence supports: all four clusters are in January to March 2020, the baseline's first fitting window, where a model fitted on a single year over-forecasts traffic (on the largest days it forecast about 225-240 vessels against 133-140 actual, while the actual year-on-year fall was 11-34%). The fall was real, but those z-scores overstate its size and should not be read as a measure of magnitude. See the Part 2 bullets below.
+**Short answer: the detector finds real swings in traffic, but the evidence that its flags track the documented events is weak.** 64% of 129 flagged clusters are within 14 days of an event, against about 56% for randomly placed clusters. That lift is small, does not appear with two other detectors on the Singapore series, and is within what the calendar's coverage of the period produces. Averaged around each event start, the anomaly path is not distinguishable from random dates. `CASE_STUDY.md` is the short write-up; `data/chart_summary.png` shows one result from each part.
+
+![Summary](data/chart_summary.png)
+
+## Findings
+
+- **Flagged clusters sit near events a little more often than chance (Part 1, sensitivity grid).** 83 of 129 clusters (64%) against about 56% at random; the real rate is above the chance rate in all 25 combinations of threshold (|z| 1.5 to 3.5) and matching window (3 to 30 days), by +2 to +28 points.
+- **No distinct anomaly path around the events (Part 2).** From the 30 days before to the 30 days after an event start, signed z moves by -0.42 (placebo p = 0.12) and |z| by +0.15 (p = 0.15); without COVID, -0.41 (p = 0.15) and +0.08 (p = 0.28). The very first fitting window (2020-01-01 to 2020-03-30) is a baseline artifact on both series, with opposite signs (Malacca mean z -3.86, Singapore +4.45), and it explains the COVID dip.
+- **Malacca and Singapore anomalies move together on the same day, with no lead (Part 3).** Zero-lag correlation +0.263 (null band -0.19 to +0.20) excluding the first 90 days, lead asymmetry -0.005 (p = 0.58).
+- **Tankers carry most of the flags; only container and roro co-move across sites (Part 4).** Tanker z correlates 0.79 (Malacca) and 0.83 (Singapore) with the total's; same-day Malacca-Singapore correlation is +0.305 for container and +0.269 for roro but within the null band for tanker and dry bulk.
+- **The flagged set is partly shared across detectors, and the event-match lift is not (Part 5).** A weekly-median and a seasonal-decomposition detector reproduce 26% to 35% of the regression baseline's clusters (9% to 14% by chance). Their event-match rates are 60% and 62% at Malacca (chance 57% and 55%) and 56% and 51% at Singapore (chance 55% and 56%), against the baseline's 72% at Singapore.
+- **The unmatched clusters are not explained by holidays or other events, and all fall in years the calendar barely covers (Part 6).** 11 of 44 are adjacent to a holiday (22% for random placement), 6 of 44 to another PortWatch event (14%), and all 44 are in 2022, 2023 and 2025, where 4%, 20% and 0% of days are within a documented event's matching window. Clusters start at 6.1 per 100 days on covered days and 4.1 per 100 days on uncovered days; with the coverage mask shifted at random the excess on covered days is not significant (78 observed against 65 expected, p = 0.21).
+- **A live refresh changes nothing for Malacca and cannot be done for Singapore (Part 7).** 42 new Malacca days (to 2026-10-18), no revision to any of the 2,806 earlier days in any column, no new flagged day, an unchanged event calendar, and the same 129 clusters and 83 matches. The API now returns no rows at all for the Port of Singapore.
+
+## Parts
+
+| Part | What was done | Main result | Script |
+|---|---|---|---|
+| 1 | Pull PortWatch data; rolling out-of-sample baseline; match flagged clusters to documented events; model selection; threshold and window sensitivity | 64% matched against 56% by chance, above chance in all 25 settings | `fetch_data.py`, `baseline.py`, `analysis.py`, `model_selection.py`, `sensitivity_analysis.py` |
+| 2 | Event study around the six events, with a placebo band and the baseline edge check | No path distinguishable from random dates; the first fitting window is an artifact | `event_study.py` |
+| 3 | Lead-lag between Malacca and Singapore anomalies | Same-day relationship, no lead either way | `lead_lag.py` |
+| 4 | Breakdown by vessel type | Tankers dominate flags; container and roro co-move across sites | `vessel_types.py` |
+| 5 | Two other detectors | Partial overlap; the event-match lift is detector-specific | `second_detector.py` |
+| 6 | Audit of the unmatched clusters | No benign explanation; all in years the calendar does not cover | `false_positive_audit.py` |
+| 7 | Live refresh, summary figure, README, case study | Malacca unchanged; Singapore port data no longer served | `refresh_check.py`, `summary_figure.py` |
+
+## Live data refresh (Part 7)
+
+`refresh_check.py` pulls the current series and event calendar into `data/refresh/` without touching the committed files, so every number in this README stays tied to the data it was computed on (Malacca to 2026-09-06, Singapore to 2026-09-04). On 2026-10-20:
+
+- **Malacca.** 2,848 days to 2026-10-18, so 42 new days. Of the 2,806 days already held, none was revised in any of the seven count columns (`data/refresh/revisions.csv`). On the refreshed series the pipeline gives the same 129 clusters, 83 matched (64.3%), 262 flagged days (the 261 in the Part 1 merge plus one day from the two Malacca days not in the Singapore merge), the same out-of-sample R^2 (0.384 against 0.382) and the same event-study changes (-0.42 signed and +0.15 absolute, placebo p = 0.12 and 0.16). The random-placement rate moves from 56.0% to 57.1% because the span is longer. The 42 new days contain no flagged day (z between about -3 and +1; the last flagged cluster is 2026-09-04 to 09-05, matched to Hormuz). (`data/refresh/headline_comparison.csv`, `z_new_days.csv`, `recent_clusters.csv`.)
+- **Event calendar.** The same 5 documented events plus the manually added COVID entry; nothing new and nothing changed.
+- **Singapore.** The daily ports table (`Daily_Ports_Data`, 548,026 rows, last edited 2026-10-20) now has no rows for `port1201`. It also has none for Busan, Hong Kong, Port Klang or Tanjung Pelepas, while Shanghai, Rotterdam and Ningbo have 2,846 days to 2026-10-16. Repeated queries over several minutes gave the same result, and the port is still in PortWatch's ports reference table. The cause is not known. The Singapore series, and with it Part 3, the Singapore side of Parts 4 and 5 and the corroboration check in Part 6, stays at the committed vintage, and `fetch_data.py` now stops without writing anything if the Singapore pull comes back empty, so a rerun cannot overwrite the committed files with a mismatched pair.
+- See `data/chart_refresh.png`.
+
+## Limitations
+
+- **One baseline.** Parts 1 to 3 rest on a log-linear model with a global trend, day-of-week and month terms, refit quarterly on two years. Part 5 shows its flags are about three times as numerous as those of local-level detectors, mostly long runs of drift, and that the event-match result depends on it.
+- **Six events and a patchy calendar.** Event-level tests have six events (five without COVID), and the calendar leaves 2022, 2023 and 2025 almost empty, so "unmatched" mostly means "no event recorded". Non-OT events in PortWatch's layer (typhoons, earthquakes) were checked only in Part 6.
+- **Daily counts without direction.** Transits and port calls have no direction of travel or dwell time. The Singapore side is the Port of Singapore, not a strait (PortWatch has no Singapore Strait series), and it can no longer be refreshed.
+- **Gaussian z-scores on fat-tailed, autocorrelated counts.** 7.8% of days are flagged where about 1.2% would be under normality; small-count vessel types are worse.
+- **Data vintage.** PortWatch revises and restructures its tables; the committed CSVs are the analysis data, and the refresh shows no revision to Malacca history so far.
+
+## Reproducing
+
+```
+pip install requests pandas numpy scipy matplotlib holidays
+python fetch_data.py            # refuses to write if the Singapore pull is empty (see the refresh section); the committed data/ is the analysis data
+python analysis.py              # baseline, flagged clusters, match to events, data/chart_overview.png
+python model_selection.py
+python sensitivity_analysis.py
+python event_study.py
+python lead_lag.py
+python vessel_types.py
+python second_detector.py
+python false_positive_audit.py  # needs network for the events layer
+python refresh_check.py         # needs network; writes data/refresh/
+python summary_figure.py
+```
+
+Everything uses fixed seeds. The whole sequence takes about ten minutes.
+
+## Detailed notes by part
+
+These are the notes in the order they were written. Later parts qualify earlier ones; the corrections are collected in "Corrections to earlier parts" below, and the findings above are the current reading.
 
 - Pulled 7.7 years of daily vessel-transit data (2019-01-01 to present) for the Malacca Strait and the Port of Singapore directly from the IMF/Oxford PortWatch public ArcGIS API, alongside PortWatch's own documented disruption-events calendar, using a `requests`-based pagination script rather than a static download.
 - **Model selection** (`python model_selection.py`, also printed at the top of `analysis.py`): compared three candidate targets (Malacca daily vessel count, Singapore daily port calls, Singapore daily trade value) under the identical rolling out-of-sample method: log-transform, trend + day-of-week + month baseline refit quarterly on the trailing 2 years, scored only on the following quarter, |z| > 2.5, clustered, matched to the event calendar within 14 days. Results:
@@ -56,21 +120,34 @@ https://github.com/ramith001/singapore-strait-congestion (suggested repo name)
   - *Unexplained.* 28 of the 44 (64%) are adjacent to neither a holiday nor another event. Of these, 24 are single days, 2 have Singapore also flagged, 7 are broad across vessel types and 13 are below the forecast.
   - *Why "unmatched" mostly means "no event in the calendar".* The share of out-of-sample days inside the 14-day matching window of a documented event is 54% overall, but by year it is 100% (2020), 100% (2021), 4% (2022), 20% (2023), 96% (2024), 0% (2025) and 82% (2026). All 44 unmatched clusters are in 2022 (24), 2023 (15) and 2025 (5), and the matched ones are in 2020 (11), 2021 (23), 2023 (1), 2024 (16) and 2026 (27). Clusters start at 6.1 per 100 days on covered days (78) and 4.1 per 100 days on uncovered days (44). If the covered-day mask is shifted at random, 65 clusters would be expected on covered days (95th percentile 88) against the 78 observed, p = 0.21, so the lift of the match rate over chance is within what the calendar's coverage and the clustering of the flagged days produce, in line with Part 5. (`data/audit_calendar_coverage.csv`, `data/audit_coverage_test.csv`.)
   - *Reading.* The flagged days are 7.8% of the out-of-sample days, against about 1.2% for a Gaussian |z| > 2.5, so fat tails and autocorrelation alone produce many flags. The unmatched clusters are short, mostly not corroborated by Singapore, and concentrated in a quiet stretch of the calendar and in the first quarter of the year; they are best treated as unexplained and probably mostly noise and unmodelled seasonality, not as confirmed false positives and not as unrecorded events. The audit cannot test AIS coverage gaps (no coverage data), month-long effects such as Ramadan (only single holidays were used), or causes absent from PortWatch's layers. See `data/chart_false_positive_audit.png`.
+
 - Tech stack: Python, requests, Pandas, NumPy, SciPy, matplotlib, holidays.
 
 ## Files
-- `fetch_data.py` — pulls the raw daily data and disruption calendar from PortWatch's public API (no key required) into `data/`.
-- `baseline.py` — the shared rolling out-of-sample fit, anomaly clustering and event matching, used by both scripts below.
-- `model_selection.py` — the three-way target comparison above; regenerates every model-selection number in this README.
-- `sensitivity_analysis.py` — checks whether the headline match-rate-vs-chance result holds across a grid of anomaly thresholds and matching windows; produces `data/sensitivity_grid.csv` and `data/chart_sensitivity_heatmap.png`.
-- `event_study.py` — lines up the Malacca z-score on each documented event's start date and averages across events with a t-interval and a random-date placebo envelope, plus the baseline edge check; produces `data/chart_event_study.png` and the `data/event_study_*.csv` files behind the numbers above.
-- `lead_lag.py` — Part 3: cross-correlation, lead asymmetry, Granger tests and flagged-cluster timing between the Malacca and Singapore anomaly series, by total/container/tanker, with and without the baseline edge window and COVID, plus a high-pass check; produces `data/chart_lead_lag.png` and the `data/lead_lag_*.csv` files behind the numbers above.
+- `fetch_data.py` - pulls the raw daily data and disruption calendar from PortWatch's public API (no key required) into `data/`.
+- `baseline.py` - the shared rolling out-of-sample fit, anomaly clustering and event matching, used by both scripts below.
+- `model_selection.py` - the three-way target comparison above; regenerates every model-selection number in this README.
+- `sensitivity_analysis.py` - checks whether the headline match-rate-vs-chance result holds across a grid of anomaly thresholds and matching windows; produces `data/sensitivity_grid.csv` and `data/chart_sensitivity_heatmap.png`.
+- `event_study.py` - lines up the Malacca z-score on each documented event's start date and averages across events with a t-interval and a random-date placebo envelope, plus the baseline edge check; produces `data/chart_event_study.png` and the `data/event_study_*.csv` files behind the numbers above.
+- `lead_lag.py` - Part 3: cross-correlation, lead asymmetry, Granger tests and flagged-cluster timing between the Malacca and Singapore anomaly series, by total/container/tanker, with and without the baseline edge window and COVID, plus a high-pass check; produces `data/chart_lead_lag.png` and the `data/lead_lag_*.csv` files behind the numbers above.
 - `vessel_types.py`: Part 4: the baseline, clusters, event matching and an event-by-type table for each vessel type at both sites, the type-against-total overlap, and the same-type correlation across sites; produces `data/chart_vessel_types.png` and the `data/vessel_type_*.csv` files behind the numbers above.
 - `second_detector.py`: Part 5: a weekly-median detector and a seasonal-decomposition detector run on the same series, compared with the baseline on accuracy, flagged days, cluster overlap against a shifted-flags null, event matching and the event study; produces `data/chart_second_detector.png` and `data/second_detector_*.csv`.
 - `false_positive_audit.py`: Part 6: checks the unmatched clusters against the edge window, holidays and festivals, the rest of PortWatch's disruption layer, Singapore corroboration and vessel-type breadth, with random-placement baselines and a calendar-coverage test (needs network for the events layer and `pip install holidays`); produces `data/chart_false_positive_audit.png` and `data/audit_*.csv`.
-- `analysis.py` — builds the rolling out-of-sample baseline, flags anomalies, cross-references them against the disruption calendar, and produces `data/chart_overview.png`.
-- `data/` — raw and processed CSVs, plus the anomaly cluster table.
+- `analysis.py` - builds the rolling out-of-sample baseline, flags anomalies, cross-references them against the disruption calendar, and produces `data/chart_overview.png`.
+- `refresh_check.py`: Part 7: pulls the current PortWatch series into `data/refresh/`, compares with the committed data and re-runs the headline pipeline on both; produces `data/chart_refresh.png` and `data/refresh/*.csv`.
+- `summary_figure.py`: Part 7: the consolidated figure from the saved CSVs (`data/chart_summary.png`).
+- `CASE_STUDY.md`: the short write-up.
+- `data/`: raw and processed CSVs (the analysis vintage), the tables behind every number in this README, the charts, and `data/refresh/` (the live pull).
+
+## Corrections to earlier parts
+
+> **Update added 2026-10-16, after Part 3. It extends Part 2's baseline-edge finding to the Singapore series and adds a lead-lag result.** The first fitting window (2020-01-01 to 2020-03-30) is artifactual for the Singapore port-call baseline too, with the opposite sign to Malacca (mean z +4.45 for Singapore against -3.86 for Malacca): Singapore's model under-forecasts that window where Malacca's over-forecasts it. Left in, the two artifacts alone make the whole-period correlation between the two anomaly series negative (-0.083) when it is positive (+0.263) without that window. On the actual question, Part 3 finds no sign that either side's anomalies come first: the relationship is contemporaneous, and the lead-lag asymmetry is about zero. See the Part 3 bullet below.
+
+> **Update added 2026-10-15, after Part 2. The Part 1 text below is unchanged, but two qualifications apply.** (1) The match-rate result stands (it is also 64%, 78 of 122 clusters, if the first 90 out-of-sample days are excluded), but it shows that flagged anomalies sit near documented events, not that the events produce a distinctive anomaly path: the Part 2 event study, which lines the z-score up on each of the six event start dates, finds an average path that is not distinguishable from randomly placed dates (post-minus-pre signed z -0.42, placebo p = 0.12; |z| +0.15, p = 0.15; without COVID, p = 0.15 and 0.28). (2) The sentence below about the four largest anomalies (z up to 7.3) all landing in the COVID-19 window reads stronger than the evidence supports: all four clusters are in January to March 2020, the baseline's first fitting window, where a model fitted on a single year over-forecasts traffic (on the largest days it forecast about 225-240 vessels against 133-140 actual, while the actual year-on-year fall was 11-34%). The fall was real, but those z-scores overstate its size and should not be read as a measure of magnitude. See the Part 2 bullets below.
 
 ## Possible extensions
-- Bring in the Singapore Maritime Data Hub (MPA's own live vessel-movement API) to see whether Singapore-specific vessel positioning corroborates the port-level story at finer granularity.
-- Extend the same rolling-baseline method to other Asia-Pacific chokepoints (Taiwan Strait, Korea Strait) PortWatch tracks, to see whether Malacca's anomaly timing is regional or Malacca-specific.
+
+- Recover a Singapore series: ask PortWatch why `port1201` is missing, or use MPA's Maritime Data Hub for vessel movements with direction, which would also allow a strait-to-strait comparison.
+- Use a detector with a level that adapts (the weekly-median or decomposition detector of Part 5) as the main one, add a moving-festival term (Lunar New Year, Hari Raya), and recompute the event study.
+- Extend the calendar: add the known 2022 and 2023 disruptions that PortWatch does not list, so that "unmatched" can be tested instead of assumed.
+- Apply the same pipeline to other chokepoints PortWatch tracks (Sunda, Lombok, the Taiwan and Korea straits) to see whether Malacca's anomaly timing is regional or specific.

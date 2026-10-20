@@ -1,0 +1,8 @@
+site,column,overlap_days,revised_days,revised_share_%,max_abs_change,median_abs_change_when_revised,median_rel_change_%_when_revised,first_revised_date,last_revised_date
+Malacca,n_container,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_dry_bulk,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_general_cargo,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_roro,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_tanker,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_cargo,2806,0,0.0,0.0,0.0,0.0,,
+Malacca,n_total,2806,0,0.0,0.0,0.0,0.0,,
